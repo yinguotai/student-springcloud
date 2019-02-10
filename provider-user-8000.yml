@@ -1,12 +1,17 @@
 server:
-  port: 8000
-  servlet:    context-path: /
-spring:  datasource:
+  port: 8002
+  servlet:
+    context-path: /
+spring:
+  datasource:
     #引入druid数据源
-    type: com.alibaba.druid.pool.DruidDataSource    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/db1?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true
     username: root
-    password: root  application:    name: provider-user
+    password: root
+  application:
+    name: provider-user
 
 
 mybatis-plus: #mybatis-plus整合
